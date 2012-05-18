@@ -7,17 +7,24 @@ Adds Google-like progressive shadows to a fixed element when scrolling in a page
 Francesco Pontillo
 
 ###Description:
-This jQuery-UI extension allows you to add some nice top and bottom shadows to a fixed-positioned element in your page, just like the ones in Google products (GMail, Google Plus, Google Groups and so on).
+This jQuery-UI extension allows you to add some nice **top and bottom shadows** to a fixed-positioned element in your page, just like the ones in Google products (GMail, Google Plus, Google Groups and so on).
 
 The shadows are progressive: if you're on top of the div (or page) the shadow is invisible; as soon as you start scrolling down, the shadow becomes more and more visible. The same thing happens for the bottom one.
 
-Currently, there's no way to set 
+Currently, there's no way to set the shadow height or scroll amount to make it stop.
 
-![Example](res/example.png)
+![Example](/frapontillo/jquery-ui-shadowize/raw/master/res/example.png)
 
 ###How to use
 
-Checkout the example.html page to see the demo in action.
+You simply need to reference:
+
+ * [jQuery](http://jquery.com/)
+ * [jQuery UI](http://jqueryui.com/) (js and css)
+ * [`jquery.ba-resize.js`](https://github.com/cowboy/jquery-resize) (used to listen to resize events)
+ * `jquery.ui.shadowize-1.0.js` and `jquery.ui.shadowize-1.0.css`
+ 
+Checkout the `example.html` page to see the demo in action.
 
 ```html
 	<body style="margin:0;overflow-y: hidden;">
