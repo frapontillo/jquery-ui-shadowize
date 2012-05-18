@@ -1,0 +1,48 @@
+/* SHADOWS CONTAINER */
+div.shadow-container {
+	margin: 				0 !important;
+	padding:				0 !important;
+	z-index:				-9999999;
+	position:				absolute;
+	right: 					0px;
+	left:					0px;
+	top: 					0px;
+	bottom:					0px;
+}
+
+/* SHADOWS */
+/* Default */
+div.shadow {
+	-webkit-mask-box-image: 	-webkit-linear-gradient(left,transparent 0%,rgba(0,0,0,.8) 50%,transparent 100%);
+	background-color:  			transparent;
+	opacity:					1;
+	position:					relative;
+	width: 						auto;
+	z-index: 					9999;
+	height: 					15px;
+	margin: 					0px 0 -15px 0px;
+}
+
+/* Top */
+div.shadow.top-shadow {
+	background-image: 			-webkit-linear-gradient(top, rgba(0, 0, 0, .2), transparent);
+	background-image: 			-moz-linear-gradient(top, rgba(0, 0, 0, .2), transparent);
+	background-image: 			-ms-linear-gradient(top, rgba(0, 0, 0, .2), transparent);
+	background-image: 			-o-linear-gradient(top, rgba(0, 0, 0, .2), transparent);
+	background-image: 			linear-gradient(top, rgba(0, 0, 0, .2), transparent);
+	position: 					absolute;
+	top: 						0px;
+	width: 						100%;
+}
+
+/* Bottom */
+div.shadow.bottom-shadow {
+	background-image: 			-webkit-linear-gradient(bottom, rgba(0, 0, 0, .2), transparent);
+	background-image: 			-moz-linear-gradient(bottom, rgba(0, 0, 0, .2), transparent);
+	background-image: 			-ms-linear-gradient(bottom, rgba(0, 0, 0, .2), transparent);
+	background-image: 			-o-linear-gradient(bottom, rgba(0, 0, 0, .2), transparent);
+	background-image: 			linear-gradient(bottom, rgba(0, 0, 0, .2), transparent);
+	position: 					absolute;
+	width: 						100%;
+	bottom: 					15px;
+}
